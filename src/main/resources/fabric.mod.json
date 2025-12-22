@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fnaf-one",
+	"version": "${version}",
+	"name": "fnaf one",
+	"description": "fredy fazber",
+	"authors": [
+		"karrot"
+	],
+	"contact": {
+		"homepage": "i got notin",
+		"sources": "i got notin"
+	},
+	"license": "MIT",
+	"icon": "assets/fnaf-one/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.karrot.fnafone.FnafOne"
+		],
+		"fabric-datagen": [
+			"net.karrot.fnafone.FnafOneDataGenerator"
+		],
+		"client": [
+			"net.karrot.fnafone.FnafOneClient"
+		]
+	},
+	"mixins": [
+		"fnaf-one.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
