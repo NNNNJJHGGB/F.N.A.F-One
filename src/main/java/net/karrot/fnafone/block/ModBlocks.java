@@ -13,13 +13,9 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
+    public static final Block ARCADE_CARPET = registerBlock("arcade_carpet",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
-    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
-            new Block(AbstractBlock.Settings.create().strength(3f)
-                    .requiresTool().sounds(BlockSoundGroup.SOUL_SOIL)));
+                    .requiresTool().sounds(BlockSoundGroup.WOOL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -35,8 +31,7 @@ public class ModBlocks {
         FnafOne.LOGGER.info("Registering Mod Blocks for" + FnafOne.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.PINK_GARNET_BLOCK);
-            entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+            entries.add(ModBlocks.ARCADE_CARPET);
         });
     }
 }
