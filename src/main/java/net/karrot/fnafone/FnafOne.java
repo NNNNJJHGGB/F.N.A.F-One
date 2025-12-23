@@ -2,6 +2,8 @@ package net.karrot.fnafone;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.karrot.fnafone.block.ModBlocks;
+import net.karrot.fnafone.item.ModItemGroups;
 import net.karrot.fnafone.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +14,9 @@ public class FnafOne implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

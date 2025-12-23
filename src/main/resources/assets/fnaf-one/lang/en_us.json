@@ -1,4 +1,10 @@
 {
   "item.fnaf-one.pink_garnet": "Pink Garnet",
-  "item.fnaf-one.raw_pink_garnet": "Raw Pink Garnet"
+  "item.fnaf-one.raw_pink_garnet": "Raw Pink Garnet",
+
+  "block.fnaf-one.pink_garnet_block": "Block of Pink Garnet",
+  "block.fnaf-one.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+
+  "itemgroup.fnaf-one.fnaf_one_items": "Fnaf Items",
+  "itemgroup.fnaf-one.fnaf_one_blocks": "Fnaf Blocks"
 }
